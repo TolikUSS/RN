@@ -123,5 +123,5 @@
     "short_period_ms": 1000,
     "long_mult": 5
   },
-  "gc": null,
+  "gc": null
 }
