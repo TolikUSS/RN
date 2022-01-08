@@ -1,0 +1,23 @@
+[Unit]
+Description=Rust TON Validator
+After=network.target auditd.service
+
+[Service]
+WorkingDirectory=/.ton/db
+ExecStart=/ton/ton_node --configs /.ton/etc
+Type=simple
+KillMode=process
+Restart=always
+RestartSec=3
+User=ton
+
+LimitNOFILE=20000000
+LimitNPROC=20000000
+
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=ton
+
+[Install]
+WantedBy=multi-user.target
+Alias=rton.service
