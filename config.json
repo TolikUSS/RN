@@ -1,7 +1,7 @@
 {
   "log_config_name": "log_cfg.yml",
   "ton_global_config_name": "ton-global.config.json",
-  "internal_db_path": "null",
+  "internal_db_path": "node_db",
   "unsafe_catchain_patches_path": null,
   "cells_gc_config": {
     "gc_interval_sec": 900,
