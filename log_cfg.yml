@@ -63,7 +63,7 @@ loggers:
     level: error
 
   storage:
-    level: info
+    level: error
 
   overlay:
     level: error
