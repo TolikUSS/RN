@@ -99,7 +99,7 @@ loggers:
     level: error
     
   validator_manager:    
-    level: info
+    level: error
 
   telemetry:
     level: error
